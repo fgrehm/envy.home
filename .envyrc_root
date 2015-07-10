@@ -1,7 +1,16 @@
 export HOME="/home/${ENVY_USER}"
+
+if [[ ! -d "${HOME}/dotfiles" ]]; then
+  echo '----------------------------------------------'
+  echo '- You need to bootstrap your environment with:'
+  echo "   cd ${HOME} && make"
+fi
+
 if [[ "${0}" = '/bin/bash' ]]; then
   if [[ -f /usr/share/bash-completion/bash_completion ]]; then
     source /usr/share/bash-completion/bash_completion
   fi
-  source /home/fgrehm/dotfiles/bashrc
+  if [[ -f /home/fgrehm/dotfiles/bashrc ]]; then
+    source /home/fgrehm/dotfiles/bashrc
+  fi
 fi
