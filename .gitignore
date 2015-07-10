@@ -1,9 +1,11 @@
 .bash
+.bash_history
 .gemrc
 .gitconfig
 .rdebugrc
 .rvmrc
 .vim
+.viminfo
 .vimrc
 devstep.yml
 dotfiles/
