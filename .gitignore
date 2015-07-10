@@ -1,0 +1,11 @@
+.bash
+.gemrc
+.gitconfig
+.rdebugrc
+.rvmrc
+.vim
+.vimrc
+devstep.yml
+dotfiles/
+vimfiles/
+.cache/
