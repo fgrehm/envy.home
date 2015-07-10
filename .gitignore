@@ -11,3 +11,4 @@ devstep.yml
 dotfiles/
 vimfiles/
 .cache/
+.config/
