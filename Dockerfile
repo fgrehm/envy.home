@@ -14,9 +14,7 @@ RUN apt-get update \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/*
 
-RUN wget -qO- https://get.docker.com/ | sh \
-    && apt-get clean \
-    && apt-get autoremove \
-    && rm -rf /var/lib/apt/lists/*
+RUN curl -sL https://get.docker.io/builds/Linux/x86_64/docker-1.6.2 > /usr/bin/docker \
+    && chmod +x /usr/bin/docker
 
 ENTRYPOINT /bin/bash
