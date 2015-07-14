@@ -16,6 +16,6 @@ bin/docker-machine:
 	chmod +x bin/docker-machine
 
 bin/docker-compose:
-	curl -L https://github.com/docker/compose/releases/download/1.3.1/docker-compose-`uname -s`-`uname -m` \
+	curl -L https://github.com/docker/compose/releases/download/1.3.2/docker-compose-`uname -s`-`uname -m` \
 		> bin/docker-compose
 	chmod +x bin/docker-compose
