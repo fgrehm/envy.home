@@ -14,3 +14,5 @@ vimfiles/
 .config/
 projects/
 hacks/
+bin/docker-compose
+bin/docker-machine
