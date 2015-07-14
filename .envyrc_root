@@ -6,6 +6,10 @@ if [[ ! -d "${HOME}/dotfiles" ]]; then
   echo "   cd ${HOME} && make"
 fi
 
+if [[ -d /home/${ENVY_USER}/dotfiles/bin ]]; then
+  export PATH="${PATH}:/home/${ENVY_USER}/dotfiles/bin"
+fi
+
 if [[ "${0}" = '/bin/bash' ]]; then
   if [[ -f /usr/share/bash-completion/bash_completion ]]; then
     source /usr/share/bash-completion/bash_completion
