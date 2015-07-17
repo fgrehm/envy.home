@@ -16,3 +16,4 @@ projects/
 hacks/
 bin/docker-compose
 bin/docker-machine
+bin/cat

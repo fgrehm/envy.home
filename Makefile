@@ -1,4 +1,4 @@
-default: dotfiles vimfiles bin/docker-machine bin/docker-compose
+default: dotfiles vimfiles bin/docker-machine bin/docker-compose bin/cat
 
 dotfiles:
 	git clone https://github.com/fgrehm/dotfiles
@@ -19,3 +19,9 @@ bin/docker-compose:
 	curl -L https://github.com/docker/compose/releases/download/1.3.3/docker-compose-`uname -s`-`uname -m` \
 		> bin/docker-compose
 	chmod +x bin/docker-compose
+
+bin/cat:
+	curl -L https://github.com/jingweno/ccat/releases/download/v1.0.0/linux-amd64-1.0.0.tar.gz \
+		| tar xvz -C /tmp/
+	mv /tmp/linux-amd64-1.0.0/ccat bin/cat
+	rm -rf /tmp/linux-amd64-1.0.0
