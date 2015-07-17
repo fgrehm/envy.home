@@ -18,3 +18,7 @@ if [[ "${0}" = '/bin/bash' ]]; then
     source /home/fgrehm/dotfiles/bashrc
   fi
 fi
+
+if [[ ! -L /var/run/docker.sock ]]; then
+  ln -s /env/run/docker.sock /var/run/docker.sock
+fi
