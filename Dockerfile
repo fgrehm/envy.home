@@ -18,3 +18,4 @@ RUN curl -sL https://get.docker.io/builds/Linux/x86_64/docker-1.6.2 > /usr/bin/d
     && chmod +x /usr/bin/docker
 
 ENTRYPOINT /bin/bash
+WORKDIR /workspace
